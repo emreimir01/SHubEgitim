@@ -19,6 +19,20 @@
             return sayi1 + sayi2 + sayi3; // int olan metotlar geriye değer döndüren metotlardır. 
 
         }
+
+        static bool MailGonder(string mailAdresi)
+        {
+           if (!string.IsNullOrEmpty(mailAdresi)) // Eğer mail adresi boş değilse
+            {
+                // Mail gönderme işlemleri
+                return true; // mail gönderme başarılı
+            }
+           else
+            {
+                return false; // mail gönderme başarısız
+            }
+
+        }
         static void Main(string[] args)
         {
             Console.WriteLine("Konu05 Metotlar");
@@ -27,6 +41,20 @@
             ToplamaYap(10, 20);
             int sonuc = ToplamaYap(10, 20, 30);
             Console.WriteLine("Hesaplanmış Fiyat: " + sonuc);
+
+            Console.WriteLine("Mail Adresiniz:");
+            var email = Console.ReadLine();
+
+            var mailGonderildiMi = MailGonder(email);
+            if (mailGonderildiMi==true)
+                           {
+                Console.WriteLine("Mail Gönderme İşlemi Başarılı");
+            }
+            else
+            {
+                Console.WriteLine("Mail Gönderme İşlemi Başarısız");
+            }
+
 
         }
     }
