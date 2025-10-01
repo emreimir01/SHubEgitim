@@ -169,6 +169,29 @@ namespace Konu16CollectionsKoleksiyonlar
             {
                 Console.WriteLine($"Id: {item.Id}\nName: {item.Name}\nEmail: {item.Email}\nPassword: {item.Password}\n");
             }
+            var yeniKullanici = new User
+            {
+                Id = 3,
+                Name = "Ali",
+                Email = "alidem33@gmail.com"
+            };
+
+            Console.WriteLine("Kullanıcılar listesinde yeniKullanici var mı? : ");
+            Console.WriteLine(users.Contains(yeniKullanici));
+            users.Add(yeniKullanici);
+            Console.WriteLine(users.Contains(yeniKullanici));
+
+            Console.WriteLine("Kullanıcılar 2: ");
+
+            foreach (var item in users)
+            {
+                Console.WriteLine($"Id: {item.Id}\nName: {item.Name}\nEmail: {item.Email}\nPassword: {item.Password}\n");
+            }
+
+            users.AddRange(); // addrange metodu çoklu kayıt eklememizi sağlar.
+
+
+
         }
     }
 }
