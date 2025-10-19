@@ -149,6 +149,7 @@ namespace Konu16CollectionsKoleksiyonlar
                 Console.WriteLine(item);
             }
             List<User> users = new(); // User tipinde liste oluşturma
+
             users.Add(new User
             {
                 Id = 1,
