@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.36414.22
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.11121.172 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Konu01Degiskenler", "Konu01Degiskenler\Konu01Degiskenler.csproj", "{0B2216FC-3528-4335-82C6-A40234AAF3CF}"
 EndProject
@@ -44,6 +44,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsAppAdoNetCRUD", "WindowsFormsAppAdoNetCRUD\WindowsFormsAppAdoNetCRUD.csproj", "{3A7FE2AA-4063-415C-ABBA-0F32294C305C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsAppEntityFrameworkCRUD", "WindowsFormsAppEntityFrameworkCRUD\WindowsFormsAppEntityFrameworkCRUD.csproj", "{BFD2F7A3-A724-4F79-99E9-48D8856FBDBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebEgitimi", "WebEgitimi\WebEgitimi.csproj", "{60EB5B7F-7B1A-49B3-93A0-45B56E93169A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +137,10 @@ Global
 		{BFD2F7A3-A724-4F79-99E9-48D8856FBDBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFD2F7A3-A724-4F79-99E9-48D8856FBDBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFD2F7A3-A724-4F79-99E9-48D8856FBDBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60EB5B7F-7B1A-49B3-93A0-45B56E93169A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60EB5B7F-7B1A-49B3-93A0-45B56E93169A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60EB5B7F-7B1A-49B3-93A0-45B56E93169A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60EB5B7F-7B1A-49B3-93A0-45B56E93169A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
