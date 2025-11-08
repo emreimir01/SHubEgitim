@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>Konu07 Js Olaylar</h1>
+    <p>
+        Javascript ile ekranda kullanıcının yaptığı eylemleri yakalayıp aksiyon almamızı sağlar.
+    </p>
+    <h2>onClick Olayı</h2>
+    <script>
+        function renkDegistir(arkaplanRengi, yaziRengi) {
+            document.bgColor = arkaplanRengi
+            document.fgColor = yaziRengi
+        }
+
+    </script>
+    <input type="button" value="Kırmızı Beyaz" onclick='renkDegistir("red", "white")' />
+    <input type="button" value="Siyah Beyaz" onclick='renkDegistir("black", "white")' />
+    <input type="button" value="Beyaz Siyah" onclick='renkDegistir("white", "black")' />
+    <input type="button" value="Mavi Sarı" onclick='renkDegistir("blue", "yellow")' />
+    <h2>onClick Olayı- Cinsiyet Seçme</h2>
+    <form name="cinsiyet">
+        <input type="radio" name="cins" /> Kadın
+        <input type="radio" name="cins" /> Erkek
+        <input type="button" value="Seç" onclick="Goster()" />
+    </form>
+    <script>
+        function Goster() {
+            var secilenCinsiyet = ""
+            if (document.cinsiyet.cins[0].checked) {
+                secilenCinsiyet = "Kadın"
+            }
+            if (document.cinsiyet.cins[1].checked) {
+                secilenCinsiyet = "Erkek"
+            }
+            alert("secilen Cinsiyet : " + secilenCinsiyet); // alert metodu kullanıcıya pencere ile mesaj vermemizi sağlar.
+        }
+    </script>
+    <hr />
+
+    <h2>onClick Confirm Olayı</h2>
+    <p>
+        onClick olayında confirm metoduyla kullanıcıya onay penceresi açabiliriz.
+    </p>
+    <script>
+        function kontrol() {
+            if (confirm("Sayfadan ayrılmak istiyor musunuz?")) { // confirm ile tamam-iptal seçeneği sunulur.
+                // location.href = "Konu06StringMetotlari.html"
+                // location.href = "https://www.google.com/" // dış bağlantıya yönlendirir
+                window.open("https://www.google.com/") // linki yeni pencerede aç
+            }
+        }
+        function urunSil(id) {
+            if (confirm(id + " Numaralı ürünü silmek istediğinizden emin misiniz?")) {
+                alert("Ürün Silindi!")
+            }
+        }
+    </script>
+    <input type="button" value="Sayfadan ayrıl" onclick="kontrol()" />
+    <input type="button" value="Ürün Sil" onclick="urunSil(18)" />
+    <input type="button" value="Mesaj Ver" onclick="alert('Merhaba')" />
+
+    <hr />
+
+    <h2>onMouseOver Olayı</h2>
+    <p>
+        Ekrandaki herhangi bir nesnenin üzerine fare ile gelindiğinde tetiklenen olaydır.
+    </p>
+    <a href="#" onmouseover="alert('onMouseOver çalıştı')">onMouseOver</a>
+    <a href="#" onmouseout="alert('onMouseOut çalıştı')">onMouseOut</a>
+
+    <hr />
+
+    <h2>OnFocus Olayı</h2>
+    <p>
+        Ekrandaki herhangi bir element üzerine tıklanıldığında tetiklenen olaydır.
+    </p>
+    <input type="text" name="name" value="Buraya tıkla" onfocus="this.value=('this focus  Çalıştı')" />
+    <input type="text" name="name" value="Buraya tıkla" onfocus="value=('this focus  Çalıştı')" />
+
+    <hr />
+
+    <h2>onBlur Olayı</h2>
+    <p>
+        Ekrandaki herhangi bir elementten fare ile çıkıldığında tetiklenen olaydır.
+    </p>
+    <input type="text" name="name" value="Buraya tıkla" onfocus="value='onfocus  Çalıştı'" onblur="value='this blur Çalıştı'" />
+
+    <hr />
+
+    <h2>onChange Olayı</h2>
+    <p>
+        Ekrandaki herhangi bir elementin değeri değiştiğinde tetiklenen olaydır.
+    </p>
+    <form action="/" method="post">
+        <select name="liste" onchange="window.open(sec(this))">
+            <option value="https://www.google.com/">Google</option>
+            <option value="https://www.yahoo.com/">Yahoo</option>
+            <option value="https://www.bing.com/">Bing</option>
+        </select>
+    </form>
+    <script>
+        function sec(s) {
+            return s.options[s.selectedIndex].value;
+        }
+    </script>
+
+    <hr />
+    <h2 id="olayBaslik">AddEventListener - Olay Dinleyici Kullanımı</h2> <p> Javascript ile sayfamızdaki elementlere olay atayarak gerçekleşecek olayları takip edip gerçekleştiğinde işlem yaptırabiliriz. </p>
+    <script>
+    function myfunction() { alert("AddEventListener çalıştı") } document.getElementById("olayBaslik").addEventListener("click", myfunction) // sayfadaki olayBaslik id li elemente sonradan olay ataması yap.
+        function removeHandler() { // olay dinlemeyi devre dışı bırakma
+            document.getElementById("olayBaslik").removeEventListener("click", myfunction)
+        }
+    </script> <button onclick="removeHandler()">removeEventListener</button>
+</body>
+</html>

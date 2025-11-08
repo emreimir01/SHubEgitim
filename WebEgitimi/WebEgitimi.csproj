@@ -76,8 +76,17 @@
     <Content Include="CssEgitimi\Css-07-float-ozelligi.html" />
     <Content Include="CssEgitimi\stil.css" />
     <Content Include="HtmlCssPage.html" />
-    <Content Include="HtmlPage1.html" />
+    <Content Include="HtmlCssFlexPage.html" />
     <Content Include="index.html" />
+    <Content Include="JavascriptEgitimi\Konu01JavascriptGiris.html" />
+    <Content Include="JavascriptEgitimi\Konu02Operatorler.html" />
+    <Content Include="JavascriptEgitimi\Konu03KararYapilari.html" />
+    <Content Include="JavascriptEgitimi\Konu04Donguler.html" />
+    <Content Include="JavascriptEgitimi\Konu05Fonksiyonlar.html" />
+    <Content Include="JavascriptEgitimi\Konu06StringMetotlari.html" />
+    <Content Include="JavascriptEgitimi\Konu07Olaylar.html" />
+    <Content Include="JavascriptEgitimi\Konu08Diziler.html" />
+    <Content Include="JavascriptEgitimi\Konu09Seciciler.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
