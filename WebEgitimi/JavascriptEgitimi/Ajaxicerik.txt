@@ -1,0 +1,8 @@
+<h1>Konu 15 Jquery AJAX</h1>
+    <p>
+        AJAX, Ýnternet sayfalarýnda Javascript ve XMLHttpRequest kullanýmý ile etkileþimli web uygulamalarý
+        oluþturmayý saðlayan bir tekniktir. AJAX, Asynchronous JavaScript and XML (Eþzamansýz JavaScript ve XML)
+    </p>
+    <p>
+        AJAX uygulamalarýmýzda hýzlanmayý ve veri kullanýmýný azaltmaya yardýmcý olur.
+    </p>
