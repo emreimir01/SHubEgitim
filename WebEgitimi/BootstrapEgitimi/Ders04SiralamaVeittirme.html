@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ders 04 Sıralama Ve İttirme</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Bootstrap Sıralama Ve İttirme</h1>
+        <p>
+            Kolonları sıralamak için order-0 ile order-5 arasında classları kullanabiliriz.
+        </p>
+        <div class="row">
+            <div class="col ">col 1</div>
+            <div class="col order-5">col 2</div>
+            <div class="col">col 3</div>
+            <div class="col order-3">col 4</div>
+            <div class="col order-1">col 5</div>
+        </div>
+        <h2>Kolonları İttirme</h2>
+        <div class="row">
+            <div class="col-md-4">
+                col-md-4 classlı div. Bu div md ölçüsü ve üzeri ekranlarda 4 kolon genişliğinde olur.
+            </div>
+            <div class="col-md-4 offset-md-4">
+                col-md-4 offset-md-4 classlı div. Bu div md ölçüsü ve üzeri ekranlarda 4 kolon genişliğinde olur ve 4 kolon sağa ittirilir.
+                <br />
+                col-md-3 classı md ekranlarda 3 birim genişlik verir. offset-md-3 classı ise 3 birim sağa ittirir.
+            </div>
+        </div>
+        <p>
+            offset classı her kırılım için 0 ile 11 arasında değer alabilir.
+        </p>
+    </div>
+</body>
+</html>

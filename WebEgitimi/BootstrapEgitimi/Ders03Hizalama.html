@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ders 03 Hizalama</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Bootstrap Hizalama</h1>
+        <p>
+            Bootstrap css display flex özelliğini kullanır ve dikeyde yatayda
+            buna göre hizalama yapabiliriz.
+        </p>
+        <h2>Kolonları Dikeyde Hizalama</h2>
+        <h3>Hizalama classları</h3>
+        <ol>
+            <li>align-items-start : başlangıca hizala</li>
+            <li>align-items-center : merkeze hizala</li>
+            <li>align-items-center : sona hizala</li>
+        </ol>
+
+        <div class="row row-cols-3 align-items-center" style="min-height: 180px; background-color: antiquewhite">
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+            <div class="col">6</div>
+            <div class="col">7</div>
+            <div class="col">8</div>
+            <div class="col">9</div>
+        </div>
+
+        <h2>Kolonları Yatayda Hizalama</h2>
+        <ol>
+            <li>Justify-content-start : başa hizala</li>
+            <li>Justify-content-center : ortaya hizala</li>
+            <li>Justify-content-end : sona hizala</li>
+            <li>Justify-content-around : her iki yana eşit boşlukta hizala</li>
+            <li>Justify-content-between : ilk öge başa, son öge sona gelecek şekilde boşluklu hizala</li>
+            <li>Justify-content-evenly : tüm kolonları eşit şekilde boşlukla hizala</li>
+        </ol>
+
+        <div class="row justify-content-center" style="min-height: 180px; background-color: antiquewhite">
+            <div class="col-1">1</div>
+            <div class="col-1">2</div>
+            <div class="col-1">3</div>
+            
+        </div>
+
+        <h2>Metin Hizalama</h2>
+        <p class="text-center">
+            text-center classı elementteki içeriği ortalamayı sağlar.
+        </p>
+        <p class="text-end">
+            Bu da sona hizalanmış bir paragraf örneğidir.
+        </p>
+        <p class="text-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" alt="Alternate Text" />
+        </p>
+    </div>
+</body>
+</html>
